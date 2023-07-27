@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gian</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#educacion" onclick="seleccionar()">EDUCACION</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/IMG_20201116_203719 (1).jpg" alt="perfil">
+            </div>
+            <h1>GIANFRANCO BORDON</h1>
+            <h2>FRONT-END DEVELOPER</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/gianfranco-bordon-947310157/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/GianBordon?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola soy Gianfranco Bordon</span> Front-end developer con 1 año de teorías y practicas con tecnologías como JavaScript, ReactJs, HTML, CSS, WordPress y MySQL. Actualmente estoy realizando proyectos propios paraseguir mejorando y aprendiendo. Estoy en la búsqueda para trabajar con una empresanacional o internacional. Siempre estoy buscando cambios que me permitan seguir creciendo.</p>
+            <div class="fila">
+                <!-- datos personale -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            28/04/1999
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            (+54) 11 5220 2897
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            shiammdp21@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicacion</strong>
+                            Buenos Aires, Argentina (GMT-3)
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses"> 
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODEAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>BASKETBALL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Thecnical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SASS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL & SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WordPress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ReactJs</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FireBase</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>67%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git & GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>97%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyecto Managament</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>91%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolutivo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Flexible % Adaptable</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Velocidad de Aprendizaje</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CRRICULUM -->
+    <section id="educacion" class="educacion">
+        <div class="contenido-seccion">
+            <h2>Educacion</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso donde aprendi a crear un sitio web partiendo del prototipo en papel. Trabaje con HTML y CSS, conoci herramientas para optimizar al maximo mi sitio web, implementando practicas de versionado de codigo con GIT, y preprocesadores como SASS. Ademas finalizando apredni a implementar Bootstrap, implemente claves SEO y subidas al servidor.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>JavaScript</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso donde aprendi los fundamentos del lenguaje de progamacion JavaScript. Explore herramientas del mismo, indage casos practicos de aplicacion. Reconoci y utilice varias librerias jQuery y las aplique para app con AJAX.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ReactJs</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso donde aprendi a progamar por componentes, mediante JavaScript, JS, ES6 y tambien aprendi sobre las ventajas del flujo de datos. Ademas aplique manejo de rutas utilizando Firebase ,y comprendi la utilizacion de virual DOM mendiante desarrollos React JS.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>WordPress</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso donde aprendi a instalar y confirgurar wordpress, desde un servidor local, donde cree mi propio dominio para mi sitio web. Ademas utilice las mejores herramientas de diseño y mejores complementos, con el objetivo de crear un sitio completamente funcional y seguro. Cree una tienda online con pasarelas de pago.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SQL</h4>
+                        <span class="casa">CoderHouse</span>
+                        <span class="fecha">2023</span>
+                        <p>Curso donde aprendi las nociones centrales de las bases de datoss relacionales. Cree una base de datos relacional desde cero, inicie con la generacion de la estructura hasta la inseccion de la informacion, e implemente procesos automatizados para el mantenimiento de la base. Por ultimo implemente consultas SQL avanzadas para generar reportes e informes para la toma de decisiones.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tecnico en Tecnologia de la informacion</h4>
+                        <span class="casa">Univercidad Kenedy</span>
+                        <span class="fecha">Actualmente</span>
+                        <p>Carrera Universitaria donde estudio para recibirme en tecnico en tecnologia de la informacion, especializado en desarrollo web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROYECTOS -->
+    <div id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyect">
+                    <img src="./img/Sneaky Sneakers.png" alt="sneaky sneakers">
+                    <div class="overlay">
+                        <a href="http://sneakysneakers.epizy.com/index.html" target="_blank" rel="noopener noreferrer"><h3>Sneaky Sneakers</h3></a>
+                        <p>Tienda Virtual {HTML & CSS}</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="./img/IceTech.png" alt="icetech">
+                    <div class="overlay">
+                        <a href="https://gianbordon.github.io/IceTech-GianfrancoBordon/" target="_blank" rel="noopener noreferrer"><h3>Ice Tech</h3></a>
+                        <p>Ecommerce {JavaScript}</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="./img/Funko Fanky.png" alt="funko fanky">
+                    <div class="overlay">
+                        <a href="https://github.com/GianBordon/Funko-fanky" target="_blank" rel="noopener noreferrer"><h3>Funko Fanky</h3></a>
+                        <p>Tienda Virtual {React Js}</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="./img/Patitas Arriba.png" alt="patitas arriba">
+                    <div class="overlay">
+                        <a href="https://drive.google.com/drive/folders/1VoYebByniWyPAwQQtVUyX8KAJmoIL9Xn?usp=drive_link" target="_blank" rel="noopener noreferrer"><h3>Patitas Arriba</h3></a>
+                        <p>Base de Datos {SQL}</p>
+                    </div>
+                </div>
+                <div class="proyect">
+                    <img src="./img/Phoenix’s Glow.png" alt="phoenix glow">
+                    <div class="overlay">
+                        <a href="https://dev-phoenixglow.pantheonsite.io/" target="_blank" rel="noopener noreferrer"><h3>Phoenix’s Glow</h3></a>
+                        <p>Tienda Virtual {WordPress}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar Mensaje<i class="fa-solid fa-paper-plane"></i> <span class="overlay"></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/gianfranco-bordon-947310157/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/GianBordon?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
