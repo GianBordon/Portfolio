@@ -176,6 +176,10 @@ html{
     font-size: 30px;
     margin-bottom: 10px;
 }
+.sobremi a{
+    text-decoration: none;
+    color: #fff;
+}
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
