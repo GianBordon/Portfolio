@@ -16,13 +16,12 @@
                 <a href="#">Gian</a>
             </div>
             <nav id="nav" >
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#educacion" onclick="seleccionar()">EDUCACION</a></li>
-                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#profile" onclick="seleccionar()">INICIO</a></li>
+                    <li class="nav__list-item"><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li class="nav__list-item"><a href="#educacion" onclick="seleccionar()">EDUCACION</a></li>
+                    <li class="nav__list-item"><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li class="nav__list-item"><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -31,28 +30,19 @@
         </header>
     </div>
     <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/Imagen de WhatsApp 2023-08-02 a las 16.48.514.jpg" alt="perfil">
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="img/Imagen de WhatsApp 2023-08-02 a las 16.48.514.jpg" alt="Foto_1" class="profile__img">
             </div>
-            <h1>GIANFRANCO BORDON</h1>
-            <h2>FRONT-END DEVELOPER</h2>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/gianfranco-bordon-947310157/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/GianBordon?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
-    </section>
-    <!-- SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola soy Gianfranco Bordon</span> Front-end developer con 1 año de teorías y practicas con tecnologías como JavaScript, ReactJs, HTML, CSS, WordPress y MySQL. Actualmente estoy realizando proyectos propios paraseguir mejorando y aprendiendo. Estoy en la búsqueda para trabajar con una empresa nacional o internacional. Siempre estoy buscando cambios que me permitan seguir creciendo.</p>
-            <div class="fila">
-                <!-- datos personale -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <h1>GIANFRANCO BORDON</h1>
+                    <h2>FRONT-END DEVELOPER</h2>
+                    <p>Soy un desarrollador front-end con un año de experiencia en teoría y práctica en tecnologías como JavaScript, ReactJS, HTML, CSS, WordPress y MySQL. Durante este tiempo, he trabajado en diversos proyectos, desde la creación de sitios web estáticos hasta aplicaciones web dinámicas, lo que me ha permitido adquirir una comprensión profunda de cada tecnología y cómo se integran para formar soluciones completas y funcionales. Además, he desarrollado habilidades en diseño responsivo y optimización de rendimiento, asegurando que las aplicaciones sean accesibles y eficientes en una amplia variedad de dispositivos.</p>
+                </div>
+                <div class="profile__info">
+                    <h2>Datos Personales</h2>
                     <ul>
                         <li>
                             <strong>Cumpleaños</strong>
@@ -71,44 +61,14 @@
                             Buenos Aires, Argentina (GMT-3)
                         </li>
                     </ul>
-                </div>
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses"> 
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-code"></i>
-                            <span>CODEAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-basketball"></i>
-                            <span>BASKETBALL</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
-                        </div>
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/gianfranco-bordon-947310157/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/GianBordon?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
-            <button>
-                <a href="./docs/Gianfranco Bordon (P).pdf" download="">Descargar CV <i class="fa-solid fa-file-arrow-down"></i></a>
-                <span class="overlay"></span>
-            </button>
         </div>
-    </section>
+    </main>
     <!-- SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
@@ -129,15 +89,7 @@
                         <span>HTML & CSS</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SASS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
+                                <span>95%</span>
                             </div>
                         </div>
                     </div>
@@ -145,7 +97,7 @@
                         <span>MySQL & SQL</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>80%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -158,34 +110,10 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Illustrator</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
                         <span>ReactJs</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>50%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>FireBase</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>67%</span>
+                                <span>65%</span>
                             </div>
                         </div>
                     </div>
@@ -210,22 +138,6 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>86%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>78%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
                         <span>Dedicacion</span>
                         <div class="barra-skill">
                             <div class="progreso">
@@ -245,7 +157,7 @@
                         <span>Resolutivo</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>88%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
@@ -253,7 +165,7 @@
                         <span>Flexible % Adaptable</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>95%</span>
+                                <span>96%</span>
                             </div>
                         </div>
                     </div>
@@ -261,7 +173,7 @@
                         <span>Velocidad de Aprendizaje</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>84%</span>
+                                <span>85%</span>
                             </div>
                         </div>
                     </div>
@@ -270,114 +182,96 @@
         </div>
     </section>
     <!-- CRRICULUM -->
-    <section id="educacion" class="educacion">
-        <div class="contenido-seccion">
-            <h2>Educacion</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <div class="item izq">
-                        <h4>Desarrollo Web</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">2023</span>
+    <section class="curriculum" id="educacion">
+        <div class="contenido">
+            <h2 class="titulo-seccion">EDUCACION</h2>
+            <div class="recorrido-anios derecha">
+                <div class="dato dato-der">
+                    <div class="anio b1">2023</div>
+                    <div class="linea c1"></div>
+                    <div class="info c1">
+                        <h3>Desarrollo Web</h3>
                         <p>Curso donde aprendi a crear un sitio web partiendo del prototipo en papel. Trabaje con HTML y CSS, conoci herramientas para optimizar al maximo mi sitio web, implementando practicas de versionado de codigo con GIT, y preprocesadores como SASS. Ademas finalizando apredni a implementar Bootstrap, implemente claves SEO y subidas al servidor.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>JavaScript</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">2023</span>
-                        <p>Curso donde aprendi los fundamentos del lenguaje de progamacion JavaScript. Explore herramientas del mismo, indage casos practicos de aplicacion. Reconoci y utilice varias librerias jQuery y las aplique para app con AJAX.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>ReactJs</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">2023</span>
-                        <p>Curso donde aprendi a progamar por componentes, mediante JavaScript, JS, ES6 y tambien aprendi sobre las ventajas del flujo de datos. Ademas aplique manejo de rutas utilizando Firebase ,y comprendi la utilizacion de virual DOM mendiante desarrollos React JS.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col derecha">
-                    <div class="item der">
-                        <h4>WordPress</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">2023</span>
-                        <p>Curso donde aprendi a instalar y confirgurar wordpress, desde un servidor local, donde cree mi propio dominio para mi sitio web. Ademas utilice las mejores herramientas de diseño y mejores complementos, con el objetivo de crear un sitio completamente funcional y seguro. Cree una tienda online con pasarelas de pago.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>SQL</h4>
-                        <span class="casa">CoderHouse</span>
-                        <span class="fecha">2023</span>
-                        <p>Curso donde aprendi las nociones centrales de las bases de datoss relacionales. Cree una base de datos relacional desde cero, inicie con la generacion de la estructura hasta la inseccion de la informacion, e implemente procesos automatizados para el mantenimiento de la base. Por ultimo implemente consultas SQL avanzadas para generar reportes e informes para la toma de decisiones.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Tecnico en Tecnologia de la informacion</h4>
-                        <span class="casa">Univercidad Kenedy</span>
-                        <span class="fecha">Actualmente</span>
-                        <p>Carrera Universitaria donde estudio para recibirme en tecnico en tecnologia de la informacion, especializado en desarrollo web.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- PROYECTOS -->
-    <div id="proyectos" class="proyectos">
-        <div class="contenido-seccion">
-            <h2>PROYECTOS</h2>
-            <div class="galeria">
-                <div class="proyect">
-                    <img src="./img/Sneaky Sneakers.png" alt="sneaky sneakers">
-                    <div class="overlay">
-                        <a href="http://sneakysneakers.epizy.com/index.html" target="_blank" rel="noopener noreferrer"><h3>Sneaky Sneakers</h3></a>
-                        <p>Tienda Virtual {HTML & CSS}</p>
+            <div class="recorrido-anios izquierda">
+                <div class="dato dato-izq">
+                    <div class="info c2">
+                        <h3>JavaScript</h3>
+                        <p>Curso donde aprendi los fundamentos del lenguaje de progamacion JavaScript. Explore herramientas del mismo, indage casos practicos de aplicacion. Reconoci y utilice varias librerias jQuery y las aplique para app con AJAX.</p>
+                    </div>
+                    <div class="linea c2"></div>
+                    <div class="anio b2">2023</div>
+                </div>
+            </div>
+            <div class="recorrido-anios derecha">
+                <div class="dato dato-der">
+                    <div class="anio b3">2023</div>
+                    <div class="linea c3"></div>
+                    <div class="info c3">
+                        <h3>ReactJs</h3>
+                        <p>Curso donde aprendi a progamar por componentes, mediante JavaScript, JS, ES6 y tambien aprendi sobre las ventajas del flujo de datos. Ademas aplique manejo de rutas utilizando Firebase ,y comprendi la utilizacion de virual DOM mendiante desarrollos React JS.</p>
                     </div>
                 </div>
-                <div class="proyect">
-                    <img src="./img/IceTech.png" alt="icetech">
-                    <div class="overlay">
-                        <a href="https://gianbordon.github.io/IceTech-GianfrancoBordon/" target="_blank" rel="noopener noreferrer"><h3>Ice Tech</h3></a>
-                        <p>Ecommerce {JavaScript}</p>
+            </div>
+            <div class="recorrido-anios izquierda">
+                <div class="dato dato-izq">
+                    <div class="info c4">
+                        <h3>SQL</h3>
+                        <p>Curso donde aprendi las nociones centrales de las bases de datoss relacionales. Cree una base de datos relacional desde cero, inicie con la generacion de la estructura hasta la inseccion de la informacion, e implemente procesos automatizados para el mantenimiento de la base. Por ultimo implemente consultas SQL avanzadas para generar reportes e informes para la toma de decisiones.</p>
+                    </div>
+                    <div class="linea c4"></div>
+                    <div class="anio b4">2023</div>
+                </div>
+            </div>
+            <div class="recorrido-anios derecha">
+                <div class="dato dato-der">
+                    <div class="anio b5">2023</div>
+                    <div class="linea c5"></div>
+                    <div class="info c5">
+                        <h3>WordPress</h3>
+                        <p>Curso donde aprendi a instalar y confirgurar wordpress, desde un servidor local, donde cree mi propio dominio para mi sitio web. Ademas utilice las mejores herramientas de diseño y mejores complementos, con el objetivo de crear un sitio completamente funcional y seguro. Cree una tienda online con pasarelas de pago.</p>
                     </div>
                 </div>
-                <div class="proyect">
-                    <img src="./img/Funko Fanky.png" alt="funko fanky">
-                    <div class="overlay">
-                        <a href="https://github.com/GianBordon/Funko-fanky" target="_blank" rel="noopener noreferrer"><h3>Funko Fanky</h3></a>
-                        <p>Tienda Virtual {React Js}</p>
+            </div>
+            <div class="recorrido-anios izquierda">
+                <div class="dato dato-izq">
+                    <div class="info c6">
+                        <h3>Tecnico en Tecnologia de la informacion</h3>
+                        <p>Carrera Universitaria donde estudio para recibirme en tecnico en tecnologia de la informacion, especializado en desarrollo web.</p>
                     </div>
-                </div>
-                <div class="proyect">
-                    <img src="./img/Patitas Arriba.png" alt="patitas arriba">
-                    <div class="overlay">
-                        <a href="https://drive.google.com/drive/folders/1VoYebByniWyPAwQQtVUyX8KAJmoIL9Xn?usp=drive_link" target="_blank" rel="noopener noreferrer"><h3>Patitas Arriba</h3></a>
-                        <p>Base de Datos {SQL}</p>
-                    </div>
-                </div>
-                <div class="proyect">
-                    <img src="./img/Phoenix’s Glow.png" alt="phoenix glow">
-                    <div class="overlay">
-                        <a href="https://dev-phoenixglow.pantheonsite.io/" target="_blank" rel="noopener noreferrer"><h3>Phoenix’s Glow</h3></a>
-                        <p>Tienda Virtual {WordPress}</p>
-                    </div>
+                    <div class="linea c6"></div>
+                    <div class="anio b6">2023</div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
+    <!-- PROYECTOS -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PROYECTOS</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Sneaky Sneakers</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">IceTech</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Patitas Arriba</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Phoenix’s Glow</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">Funko Fanky</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">DreamWaveStyles</h2>
+            </div>
+        </div>
+    </section>
     <!-- CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
@@ -385,19 +279,19 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefonico">
-                    <input type="text" placeholder="Direccion de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>Enviar Mensaje<i class="fa-solid fa-paper-plane"></i> <span class="overlay"></span></button>
+                    <input class="form__items" type="text" placeholder="Tú Nombre">
+                    <input class="form__items" type="text" placeholder="Número telefonico">
+                    <input class="form__items" type="text" placeholder="Direccion de correo">
+                    <input class="form__items" type="text" placeholder="Tema">
+                    <textarea class="form__items" name="" id="" cols="15" rows="8" placeholder="Mensaje"></textarea>
+                    <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i> <span class="overlay"></span></button>
                 </div>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
     <footer>
-        <a href="#inicio" class="arriba">
+        <a href="#profile" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
