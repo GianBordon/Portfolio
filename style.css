@@ -44,13 +44,8 @@ body{
     align-items: center;
     padding: 10px 20px;
 }
-.contenedor-header header .logo a{
-    font-family: var(--font-textos);
-    font-weight: 600;
-    font-size: 36px;
-    color: var(--contraste);
-    text-decoration: none;
-    letter-spacing: 2px;
+.contenedor-header header .logo a img{
+    height: 30px;
 }
 .contenedor-header header ul{
     display: flex;
